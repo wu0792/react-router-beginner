@@ -1,4 +1,4 @@
-import { Router, Route, IndexLink, RouteLink, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, RouteLink, browserHistory } from 'react-router'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -11,7 +11,7 @@ import './index.css';
 ReactDOM.render(
   <Router history={browserHistory} >
     <Route path='/' component={App} >
-      <IndexLink component={Home} />
+      <IndexRoute component={Home} />
       <Route path='' component={Home} />
       <Route path='about' component={About} />
       <Route path='list' component={List}>
